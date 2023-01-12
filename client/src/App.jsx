@@ -1,13 +1,33 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import Table from './components/Table';
 import './App.css';
 import { Users } from './users';
 
 function App() {
-  const [query, setQuery] = useState("");
-  console.log("QUERY ====> ", Users.filter(( user ) => {
-    user.first_name.toLowerCase().includes(query);
-  }));
+  const [ error, setError ] = useState({ truth: false, title: '', msg: '' });
+  const [ query, setQuery ] = useState("");
+  const [ data, setData ] = useState([]);
+
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const response = await axios.get(`https://localhost:5000/api/users?q=${query}`);
+        setData(response.data);
+      } catch (err) {
+        setError({ 
+          truth: true, 
+          title: "Deu ruim!!!!", 
+          msg: "Erro na requisição dos usuarios..." 
+        });
+        console.log(err);
+      }
+    };
+
+    if (query.length === 0 || query.length > 2) {
+      fetchUsers();
+    }
+  }, []);
 
   const search = ( data ) => {
     return (
@@ -19,6 +39,15 @@ function App() {
     );
   };
 
+  if (error.truth) {
+    return (
+      <div className="App">
+        <h1>{ error.title }</h1>
+        <h3>{ error.msg }</h3>
+      </div>
+    );
+  }
+
   return (
     <div className="App">
       <input 
@@ -29,7 +58,7 @@ function App() {
       />
 
       <Table 
-        data={ search(Users) } />
+        data={ [] } />
     </div>
   );
 }
