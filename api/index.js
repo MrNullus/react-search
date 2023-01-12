@@ -4,8 +4,8 @@ import cors from 'cors';
 const express = express();
 app.use(cors());
 
-app.get("/", ( req, res ) => {
-
+app.get("/api/", ( req, res ) => {
+	res.json("Hellloo World Darknessssssss!!!");
 });
 
-app.listen(500, () => console.log("API is working!!!!!!!!!!!"))
+app.listen(5000, () => console.log("API is working in port 5000!!!!!!!!!!!"));
