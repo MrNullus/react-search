@@ -1,0 +1,21 @@
+.app {
+  margin: 50px;
+}
+
+.search {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.list-item {
+  margin-bottom: 20px;
+  color: #444;
+  font-size: 25px;
+  font-weight: 300;
+}
