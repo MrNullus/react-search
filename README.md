@@ -22,6 +22,8 @@ As tecnologias usadas no projeto.
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
+![React](https://img.shields.io/badge/Express-fff?style=for-the-badge&logo=express&logoColor=000)
+
 <br>
 
 ## 💈 Run 
