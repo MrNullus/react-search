@@ -1,13 +1,12 @@
+import { Users } from './users.js';
 import express from 'express';
 import cors from 'cors';
-import { Users } from './users';
 
-const express = express();
+const app = express();
 app.use(cors());
 
 app.get("/api/users", ( req, res ) => {
 	// res.json("Hellloo World Darknessssssss!!!");
-
 	const { q } = req.query;
 	const keys = ["first_name", "last_name", "email"];
 
@@ -17,7 +16,31 @@ app.get("/api/users", ( req, res ) => {
 		);
 	};
 
-	res.json(search(Users).splice(0, 10));
+	q ? res.json(search(Users).slice(0, 10)) : res.json(Users.slice(0, 10));
 });
 
-app.listen(5000, () => console.log("API is working in port 5000!!!!!!!!!!!"));
+app.listen(3001, () => { 
+	console.log("API is working in port 3001!!!!!!!!!!!");
+});
+
+ //               ___...
+ //         .--.-~      \
+ //       .' ,~          \-.
+ //    ,-~  /            |  \
+ //   .-~  ,,'               \
+ //  /     |                 `\
+ // |     ~|,            .    |\
+ // |     ,-')            |  |' '
+ // /\_   \  [           ,'  ;  |
+ // |     'T\\  ,~-.  .-y' ,'   |
+ //  \ \ .\;. `. .-.,__.' .'   |'
+ //   Y-~\"|.|  ~. d",-.       ;
+ //   `.  |Y#P   .Y#|;{|    _./'
+ //     ~-|`~<    ~ \|;'   ~ ;
+ //      \`. ==.    ,       ,'
+ //       \-. ~   .- `(  ,'.'
+ //        ~~-..-X     ~~~~
+ //           `~--\
+ //                `   "Futaba-chan"
+ //                      (from "Futaba-kun Change")
+ //                        --- Dov Sherman
