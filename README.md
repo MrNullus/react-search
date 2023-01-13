@@ -10,10 +10,12 @@ Sendo elas:
 
 Confira o projeto em: [https://form-react-sass.vercel.app/](https://form-react-sass.vercel.app/)
 
-## 📟 Preview
-![Preview do sistema](./.github/preview)
-![image](https://user-images.githubusercontent.com/70487766/212226892-078d3161-8244-4d2b-af55-278cdf68916b.png)
+<br>
 
+## 📟 Preview
+![Preview do sistema](.github/preview.png)
+
+<br>
 
 ## 📼 Tecnologias
 As tecnologias usadas no projeto.
@@ -21,6 +23,8 @@ As tecnologias usadas no projeto.
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
+<br>
 
 ## 💈 Run 
 
