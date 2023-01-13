@@ -1,15 +1,10 @@
 function Table({ data }) {
-  const [query, setQuery] = useState("");
-  console.log("QUERY ====> ", Users.filter(( user ) => {
-    user.first_name.toLowerCase().includes(query);
-  }));
-
   return (
-    <table summary="Users">
+    <table summary="Users" cellSpacing="23" cellPadding="5">
       <caption>Users</caption>
       <thead>
         <tr>
-          <th scope="col">ID</th>
+          <th scope="col"># ID</th>
           <th scope="col">Name</th>
           <th scope="col">Surname</th>
           <th scope="col">Email</th>
