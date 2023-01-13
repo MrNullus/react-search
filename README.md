@@ -8,8 +8,6 @@ Sendo elas:
 - Com Banco de Dados
 - Com API
 
-Confira o projeto em: [https://form-react-sass.vercel.app/](https://form-react-sass.vercel.app/)
-
 <br>
 
 ## 📟 Preview
