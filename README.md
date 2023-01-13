@@ -10,6 +10,10 @@ Sendo elas:
 
 Confira o projeto em: [https://form-react-sass.vercel.app/](https://form-react-sass.vercel.app/)
 
+## 📟 Preview
+![Preview do sistema](./.github/preview)
+![image](https://user-images.githubusercontent.com/70487766/212226892-078d3161-8244-4d2b-af55-278cdf68916b.png)
+
 
 ## 📼 Tecnologias
 As tecnologias usadas no projeto.
