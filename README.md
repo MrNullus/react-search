@@ -1,7 +1,12 @@
 # React Search 
 ![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
 
-Formulário que criei para a prática de manipulação e validação do mesmo, feito em apenas com React e Sass.
+Nesse projeto coloco em pratica formas de fazer pesquisas com React. 
+
+Sendo elas:
+- Pesquisa simples de forma local
+- Com Banco de Dados
+- Com API
 
 Confira o projeto em: [https://form-react-sass.vercel.app/](https://form-react-sass.vercel.app/)
 
