@@ -11,22 +11,20 @@ function App() {
    const [query, setQuery] = useState("");
    return (
      <div className="app">
+       <header>
+         <h1>React Search</h1>
+         <p>
+           Nesse projeto coloco em pratica formas de fazer pesquisas com React.
+         </p>
+       </header>
+      
        <input
          className="search"
          placeholder="Search..."
          onChange={(e) => setQuery(e.target.value.toLowerCase())}
        />
-       <ul className="list">
-         {
-           Users.filter((asd) =>
-             asd.first_name.includes(query)
-           ).map((user) => (
-             <li className="listItem" key={user.id}>
-               {user.first_name}
-             </li>
-           ))
-        }
-       </ul>
+   
+       <Table data={ Users } />
      </div>
    );
 }
