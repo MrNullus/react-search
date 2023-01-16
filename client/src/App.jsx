@@ -63,7 +63,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3001/api/users?q=${query}`);
+        const response = await axios.get(`https://vercel.com/msnullus/react-search-2hsj:3001/api/users?q=${query}`);
         setData(response.data);
       } catch (err) {
         setError({ 
