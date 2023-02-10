@@ -16,15 +16,33 @@ function App() {
          placeholder="Search..."
          onChange={(e) => setQuery(e.target.value.toLowerCase())}
        />
-       <ul className="list">
+
+    <table summary="Users" cellSpacing="23" cellPadding="5">
+      <caption>Users</caption>
+      <thead>
+        <tr>
+          <th scope="col"># ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Surname</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+    
+      <tbody>
          {Users.filter((asd) =>
            asd.first_name.toLowerCase().includes(query)
          ).map((user) => (
            <li className="listItem" key={user.id}>
-             {user.first_name}
+             <tr>
+                <td>{ item.id }</td>
+                <td>{ item.first_name }</td>
+                <td>{ item.last_name }</td>
+                <td>{ item.email }</td>
+              </tr> 
            </li>
          ))}
-       </ul>
+      </tbody>
+       </table>
      </div>
    );
 }
