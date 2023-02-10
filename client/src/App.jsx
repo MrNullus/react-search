@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Table from './components/Table';
 import './App.css';
-import { Users } from '../users';
+import { Users } from '../../users';
 
 /*
 *BASIC SEARCH
