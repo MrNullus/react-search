@@ -29,9 +29,9 @@ function App() {
       </thead>
     
       <tbody>
-         {Users.filter((asd) =>
-           asd.first_name.toLowerCase().includes(query)
-         ).map((user) => (
+         {Users.filter((user) =>
+           user.first_name.toLowerCase().includes(query)
+         ).map((item) => (
              <tr>
                 <td>{ item.id }</td>
                 <td>{ item.first_name }</td>
