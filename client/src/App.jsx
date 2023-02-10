@@ -7,27 +7,27 @@ import { Users } from '../users';
 /*
 *BASIC SEARCH
 */
-// function App() {
-//   const [query, setQuery] = useState("");
-//   return (
-//     <div className="app">
-//       <input
-//         className="search"
-//         placeholder="Search..."
-//         onChange={(e) => setQuery(e.target.value.toLowerCase())}
-//       />
-//       <ul className="list">
-//         {Users.filter((asd) =>
-//           asd.first_name.toLowerCase().includes(query)
-//         ).map((user) => (
-//           <li className="listItem" key={user.id}>
-//             {user.first_name}
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// }
+function App() {
+   const [query, setQuery] = useState("");
+   return (
+     <div className="app">
+       <input
+         className="search"
+         placeholder="Search..."
+         onChange={(e) => setQuery(e.target.value.toLowerCase())}
+       />
+       <ul className="list">
+         {Users.filter((asd) =>
+           asd.first_name.toLowerCase().includes(query)
+         ).map((user) => (
+           <li className="listItem" key={user.id}>
+             {user.first_name}
+           </li>
+         ))}
+       </ul>
+     </div>
+   );
+}
 
 /*
 * SEARCH ON A DATATABLE
@@ -54,7 +54,7 @@ import { Users } from '../users';
 
 /*
 * API SEARCH
-*/
+
 function App() {
   const [ error, setError ] = useState({ truth: false, title: '', msg: '' });
   const [ query, setQuery ] = useState("");
@@ -107,5 +107,6 @@ function App() {
     </div>
   );
 }
+*/
 
 export default App;
